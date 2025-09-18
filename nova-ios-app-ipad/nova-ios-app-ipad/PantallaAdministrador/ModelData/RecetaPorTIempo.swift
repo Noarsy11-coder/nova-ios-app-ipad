@@ -4,7 +4,7 @@ import Charts
 struct RecetaPorTIempo: View {
     var body: some View {
         ZStack {
-            let azulnovaa = Color(red: 3/255, green: 104/255, blue: 138/255)
+            //let azulnovaa = Color(red: 3/255, green: 104/255, blue: 138/255)
             let naranjanova = Color(red: 255/255, green: 153/255, blue: 0/255)
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Color.white)

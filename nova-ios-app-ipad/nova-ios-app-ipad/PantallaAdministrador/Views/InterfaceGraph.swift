@@ -5,7 +5,7 @@ struct InterfaceGraph: View {
     var body: some View {
         ZStack {
             let azulnova = Color(red: 3/255, green: 104/255, blue: 138/255)
-            let naranjanovaa = Color(red: 255/255, green: 153/255, blue: 0/255)
+            //let naranjanovaa = Color(red: 255/255, green: 153/255, blue: 0/255)
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Color.white)
                 .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 2)
@@ -53,9 +53,9 @@ struct InterfaceGraph: View {
                             )
                         Spacer()
                         HStack{
-                            Text("Objetivo:")
+                            Text("Dias Trabajados")
                                 .foregroundStyle(.gray)
-                            Text("100")
+                            Text("5")
                                 .foregroundStyle(azulnova)
                             Spacer()
                             Text("Due day 31/12/2018")

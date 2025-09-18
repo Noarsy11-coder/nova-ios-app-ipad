@@ -1,17 +1,17 @@
 //
-//  ContentView.swift
-//  TabViewEjemplo
+//  TablasComparativasView.swift
+//  nova-ios-app-ipad
 //
-//  Created by Juan Pablo Escalona on 26/08/25.
+//  Created by Juan Pablo Escalona on 17/09/25.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct TablasComparativasView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Dashboard")
+                Text("Tablas Comparativas")
                     .font(.system(size: 48, weight: .bold))
                     .foregroundStyle(.black)
                 
@@ -21,12 +21,11 @@ struct ContentView: View {
                     .font(.system(size: 50))
                     .foregroundStyle(.black)
             }.padding(.horizontal, 30)
-            PantallaPrincipal()
+            PantallaSecundaria()
         }
-            
-            }
     }
+}
 
 #Preview {
-    ContentView()
+    TablasComparativasView()
 }
