@@ -31,7 +31,7 @@ struct InterfaceGraph: View {
                             .tint(.gray)
                         }
                         //Spacer()
-                        let recetas = datosBarChart[0].CantidadRecetas // 24
+                        let recetas = datosBarChart[2].CantidadRecetas // 24
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .fill(Color.white)
                             .shadow(color: .black.opacity(0.08), radius: 8,x:0,y:2)

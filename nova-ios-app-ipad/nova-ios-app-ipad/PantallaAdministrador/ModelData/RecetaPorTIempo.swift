@@ -4,8 +4,8 @@ import Charts
 struct RecetaPorTIempo: View {
     var body: some View {
         ZStack {
-            //let azulnovaa = Color(red: 3/255, green: 104/255, blue: 138/255)
-            let naranjanova = Color(red: 255/255, green: 153/255, blue: 0/255)
+            let azulnovaa = Color(red: 3/255, green: 104/255, blue: 138/255)
+            //let naranjanova = Color(red: 255/255, green: 153/255, blue: 0/255)
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Color.white)
                 .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 2)
@@ -15,7 +15,7 @@ struct RecetaPorTIempo: View {
                         HStack {
                             Image(systemName: "receipt.fill")
                                 .font(.system(size: 30))
-                                .foregroundStyle(naranjanova)
+                                .foregroundStyle(azulnovaa)
                                 .frame(width:50, height : 50)
                             Text(" Tiempo por Receta")
                                 .font(.title)
@@ -40,14 +40,14 @@ struct RecetaPorTIempo: View {
                                         x: .value("Nombre", item.nombre),
                                         y: .value("Cantidad", item.CantidadRecetas)
                                     )
-                                    .foregroundStyle(.orange)
+                                    .foregroundStyle(azulnovaa)
                                     .lineStyle(StrokeStyle(lineWidth:3, lineCap: .round))
                                     
                                     PointMark (
                                         x : .value("Nombre", item.nombre),
                                         y : .value("Cantidad", item.CantidadRecetas)
                                     )
-                                    .foregroundStyle(naranjanova)
+                                    .foregroundStyle(azulnovaa)
                                     .symbolSize(100)
                                     
                                 }
@@ -55,7 +55,7 @@ struct RecetaPorTIempo: View {
                                 .padding()
                                 
                             )
-                            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous)) // 👈 recorta
+                            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
 
                             .padding(8)
                         
@@ -65,7 +65,7 @@ struct RecetaPorTIempo: View {
                             Text("Goal:")
                                 .foregroundStyle(.gray)
                             Text("1.000")
-                                .foregroundStyle(naranjanova)
+                                .foregroundStyle(azulnovaa)
                             Spacer()
                             Text("Due day 31/12/2018")
                                 .foregroundStyle(.gray)

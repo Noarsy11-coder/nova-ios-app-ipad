@@ -7,9 +7,10 @@ struct PantallaSecundaria: View {
                 
                 
                 InterfaceTablasComp()
+                TRViewSegundaPanalla()
             }
-            .padding(.vertical, 20)
-            .padding(.bottom, 80)
+            .padding(.vertical, 10)
+            //.padding(.bottom, 0)
         }
         .background(Color(UIColor.systemGroupedBackground))
         //.scrollIndicators(.hidden) // opcional, para ocultar la barra lateral
