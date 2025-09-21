@@ -12,7 +12,7 @@ import Charts
 struct TRViewSegundaPanalla: View {
     var body: some View {
         ZStack {
-            let azulnova = Color(red: 3/255, green: 104/255, blue: 138/255)
+            //let azulnova = Color(red: 3/255, green: 104/255, blue: 138/255)
             let naranjanova = Color(red: 255/255, green: 153/255, blue: 0/255)
 
 
@@ -62,7 +62,7 @@ struct TRViewSegundaPanalla: View {
                                     
                                 }
                                     //.padding(.leading, 26.0)
-                                    .frame(height: 100)
+                                    .frame(height: 300)
                                         .tint(.black)
                                         .cornerRadius(8)
                                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
